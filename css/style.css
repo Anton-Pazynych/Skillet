@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+.container {
+  padding: 0 48px;
+  margin: 0 auto;
+}
+@media (max-width: 768.98px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+.shipping {
+  height: 40px;
+  width: 100%;
+  background: #F0EEDD;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.shipping__title {
+  font-family: "Roboto";
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #670A18;
+}
+
+.menu {
+  height: 82px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.menu__body {
+  min-width: calc(100vw - 98px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+@media (max-width: 768.98px) {
+  .menu__body {
+    min-width: calc(100vw - 32px);
+  }
+}
+@media (max-width: 600px) {
+  .menu__body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+.menu__item {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #35312E;
+  padding: 0 0 0 35px;
+}
+.menu__item:first-child {
+  padding: 0;
+}
+.menu__shop {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #F5F1E9;
+  padding: 12px 15px;
+  border-radius: 50%;
+  background-color: #C87B5E;
+}
+
+.menu__shop_body {
+  display: inline;
+  padding: 0 0 0 15px;
+}
+
+.skillet__bg {
+  position: absolute;
+  width: 100vw;
+}
+.skillet__body {
+  position: relative;
+}
+.skillet__sub-title {
+  padding: 170px 0 10px 0;
+  font-family: "Roboto";
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #35312E;
+}
+.skillet__title {
+  padding: 0 0 0 0;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 52px;
+  letter-spacing: 1px;
+  color: #35312E;
+}
+.skillet__btc-body {
+  padding: 58px 0 0 0;
+}
+.skillet__btc {
+  font-family: "Roboto";
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #FFFFFF;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 20px 30px;
+  background: #D37657;
+  border-radius: 2px;
+}
+
+span {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}

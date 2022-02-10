@@ -1,1 +1,161 @@
 @import "null.scss";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+.container {
+    padding: 0 48px;
+    margin: 0 auto;
+    @media (max-width: $breakpoints768){
+        padding: 0 16px;
+    }
+    
+}
+
+
+// Messages on top
+.shipping {
+    height: 40px;
+    width: 100%;
+    background: #F0EEDD;
+    display: flex;
+    align-items: center;
+
+    &__title {
+        font-family:'Roboto';
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #670A18;
+    }
+
+// Menu Block    
+}
+.menu {
+    height: 82px;
+    display: flex;
+    align-items: center;
+    
+    
+
+    &__body {
+        min-width: calc(100vw - 98px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        @media (max-width: $breakpoints768){
+            min-width: calc(100vw - 32px);
+        }
+        @media (max-width: 600px){
+            flex-wrap: wrap;
+        }
+    }
+
+    &__left {
+        
+    }
+
+    &__center {
+    }
+
+    &__item {
+        font-family:'Roboto';
+        font-weight: bold;
+        font-size: 13px;
+        line-height: 22px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        color: #35312E;
+        padding: 0 0 0 35px;
+        &:first-child{
+            padding: 0;
+        }
+        
+
+    }    
+    
+    &__shop {
+        font-family: 'Roboto';
+        font-weight: bold;
+        font-size: 13px;
+        text-transform: uppercase;
+        color: #F5F1E9;
+
+        padding: 12px 15px;
+        border-radius: 50%;
+        background-color: #C87B5E;
+    }
+}
+
+.menu__shop_body{
+    display: inline;
+    padding: 0 0 0 15px;
+}
+
+// Skillet_block
+
+.skillet {
+
+    &__bg {
+        position: absolute;
+        width: 100vw;
+    }
+
+    &__body {
+        position: relative;
+
+    }
+
+    &__sub-title {
+        padding: 170px 0 10px 0 ;
+        font-family: 'Roboto';
+        font-size: 16px;
+        line-height: 16px; 
+        text-transform: uppercase;
+        color: #35312E;
+    }
+
+    &__title {
+        padding: 0 0 0 0;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 50px;
+        line-height: 52px;
+        letter-spacing: 1px;
+        color: #35312E;
+    }
+
+    &__btc-body{
+        padding: 58px 0 0 0;
+    }
+
+    &__btc {
+        font-family: 'Roboto';
+        font-weight: bold;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #FFFFFF;
+
+        display: inline-flex;
+        padding: 20px 30px;
+        background: #D37657;
+        border-radius: 2px;
+    }
+}
+
+span {
+    text-decoration-line: underline;
+}
+
+
+
+
+
+
