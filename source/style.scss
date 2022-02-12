@@ -106,7 +106,6 @@
     padding: 0 0 0 15px;
 }
 
-
 // Skillet_block
 .skillet {
     background-image: url(/img/bg-up.png);
@@ -159,7 +158,9 @@
         line-height: 52px;
         letter-spacing: 1px;
         color: #35312E;
-
+        & span {
+          text-decoration-line: underline;
+        }
         @media(max-width: $breakpoints768){
             text-align: center;
         }
@@ -201,9 +202,6 @@
     }
 }
 
-span {
-    text-decoration-line: underline;
-}
 
 //Traditional
 .traditional {
@@ -552,9 +550,257 @@ span {
     }
 }
 
+//Dishes-block
+.dishes {
+    background-color: #FCFAF6;
+    max-width: 1440px;
+    margin: 0 auto;
+  
 
+  &__body {
+  }
 
+  &__title {
+    max-width: 477px;
+    margin: 0 auto;
+    padding: 75px 0 18px 0;
+    font-family: 'Roboto';
+    font-weight: bold;
+    font-size: 33px;
+    line-height: 55px;
+    text-align: center;
+    letter-spacing: 1.2px;
+    color: #35312E;
+    @media(max-width:$breakpoints488){
+      font-size: 28px;
+      line-height: 35px;
+    }
+  }
 
+  &__sub-title {
+    max-width: 441px;
+    margin: 0 auto;
+    font-family: 'Roboto';
+    font-size: 18px;
+    line-height: 29px;
+    text-align: center;
+    color: #4F463F;
+  }
+
+  &__item-body {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    @media(max-width:$breakpoints488){
+      padding: 0px 0 50px 0;
+    }
+  }
+
+  &__item {
+    width: 286px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+
+    &_text-block{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 480px;
+    }
+
+    &_img {
+    }
+
+    &_img-bg{
+      width: 250px;
+      height: 120px;
+      border-radius: 50%;
+      background-color: #cdc7b3b0;
+      margin: -120px 0 0 0;
+    }
+
+    &_title {
+      padding: 30px 0 5px 0;
+      font-family: 'Roboto';
+      font-size: 14px;
+      line-height: 24px;
+      text-align: center;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      color: #35312E;
+    }
+
+    &_price {
+      font-family: 'Roboto';
+      font-size: 14px;
+      line-height: 21px;
+      text-align: center;
+      letter-spacing: 0.1px;
+      color: #6E635A;
+    }
+
+    &_sub-title {
+      width: 175px;
+      padding: 7px 0 0px 0;
+      font-family: 'Roboto';
+      font-size: 11px;
+      line-height: 20px;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #6E635A;
+    }
+
+    &_colors-body {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &_color {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+  }
+}
+
+//Dishes-block  -->  Items colors block
+.colors-body-1{
+  width: 100px;
+
+  &_color1 {
+    background: #E09D81;
+    &:focus{
+      border: 4px solid #B76D47 ;
+  }
+  }
+
+  &_color2 {
+    background: #CDC7B3;
+    &:focus{
+      border: 4px solid #B76D47 ;
+  }
+  }
+
+  &_color3 {
+    background: #595752;
+    &:focus{
+      border: 4px solid #B76D47 ;
+  }
+  }
+}
+
+.colors-body-2{
+  width: 180px;
+
+  &_color1 {
+    background: #CCBD9E;
+    &:focus{
+      border: 4px solid #6E6259;
+  }
+  }
+
+  &_color2 {
+    background: #B55900;
+    &:focus{
+      border: 4px solid #CCBD9E;
+  }
+  }
+
+  &_color3 {
+    background: #5B653B;
+    &:focus{
+      border: 4px solid #CCBD9E;
+  }
+  }
+
+  &_color4 {
+    background: #C33636;
+    &:focus{
+      border: 4px solid #6E6259;
+  }
+  }
+
+  &_color5 {
+    background: #D3C2CA;
+    &:focus{
+      border: 4px solid #6E6259;
+  }
+  }
+}
+
+.colors-body-3{
+  width: 100px;
+
+  &_color1 {
+    background: #E09D81;
+    &:focus{
+      border: 4px solid #B76D47 ;
+  }
+  }
+
+  &_color2 {
+    background: #CDC7B3;
+    &:focus{
+      border: 4px solid #B76D47 ;
+  }
+  }
+
+  &_color3 {
+    background: #595752;
+    &:focus{
+      border: 4px solid #B76D47 ;
+  }
+  }
+}
+
+.colors-body-4{
+  width: 220px;
+
+  &_color1 {
+    background: #748EA1;
+    &:focus{
+      border: 4px solid #6E6259;
+  }
+  }
+
+  &_color2 {
+    background: #7D836E;
+    &:focus{
+      border: 4px solid #CCBD9E;
+  }
+  }
+
+  &_color3 {
+    background: #C33636;
+    &:focus{
+      border: 4px solid #CCBD9E;
+  }
+  }
+
+  &_color4 {
+    background: #CDC7B3;
+    &:focus{
+      border: 4px solid #6E6259;
+  }
+  }
+
+  &_color5 {
+    background: #595752;
+    &:focus{
+      border: 4px solid #6E6259;
+  }
+  }
+
+  &_color6 {
+    background: #D3C2CA;
+    &:focus{
+      border: 4px solid #6E6259;
+  }
+  }
+}
 
 
 
