@@ -5,16 +5,19 @@
 
 
 .container {
+    max-width: 1440px;
     padding: 0 48px;
     margin: 0 auto;
-    @media (max-width: $breakpoints768){
-        padding: 0 16px;
+    @media(max-width: $breakpoints488){
+        padding: 0 28px;
     }
-    
+    @media(max-width: $breakpoints375){
+        padding: 0 18px;
+    }
 }
 
 
-// Messages on top
+// Header
 .shipping {
     height: 40px;
     width: 100%;
@@ -34,28 +37,24 @@
 
 // Menu Block    
 }
+
 .menu {
     height: 82px;
-    display: flex;
     align-items: center;
-    
     
 
     &__body {
-        min-width: calc(100vw - 98px);
-        display: flex;
+        padding: 25px 0;
         align-items: center;
+        display: flex;
         justify-content: space-between;
-        @media (max-width: $breakpoints768){
-            min-width: calc(100vw - 32px);
-        }
         @media (max-width: 600px){
             flex-wrap: wrap;
         }
     }
 
     &__left {
-        
+        justify-items: left;
     }
 
     &__center {
@@ -73,6 +72,10 @@
         &:first-child{
             padding: 0;
         }
+        transition: .5s;
+        &:hover{
+            color: #d44c1f;
+        }
         
 
     }    
@@ -87,6 +90,11 @@
         padding: 12px 15px;
         border-radius: 50%;
         background-color: #C87B5E;
+        transition: .5s;
+        &:hover{
+            background: #d44c1f;  
+            
+        }
     }
 }
 
@@ -95,31 +103,52 @@
     padding: 0 0 0 15px;
 }
 
+
 // Skillet_block
-
 .skillet {
-
-    &__bg {
-        position: absolute;
-        width: 100vw;
+    background-image: url(/img/bg-up.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    @media(max-width: $breakpoints1400){
+        background-position: center;
+    }
+    @media(max-width: $breakpoints768){
+        background-position: 30% 80%;
     }
 
+    
     &__body {
-        position: relative;
+        margin: 0 0 0 25%;
+        @media(max-width: 1500px){
+            margin: 0 0 0 20%;
+        }
+        @media(max-width: $breakpoints992){
+            margin: 0 0 0 15%;
+        }
+        @media(max-width: $breakpoints768){
+            margin: 0;
+        }
 
     }
 
     &__sub-title {
-        padding: 170px 0 10px 0 ;
+        padding: 15% 0 10px 0 ;
         font-family: 'Roboto';
         font-size: 16px;
         line-height: 16px; 
         text-transform: uppercase;
         color: #35312E;
+        @media(max-width: $breakpoints768){
+            padding: 150px 0 10px 0;
+            text-align: center;
+        }
+        @media(max-width: $breakpoints488){
+            padding: 130px 0 30px 0;
+            text-align: center;
+        }
     }
 
     &__title {
-        padding: 0 0 0 0;
         font-family: 'Roboto';
         font-style: normal;
         font-weight: normal;
@@ -127,10 +156,23 @@
         line-height: 52px;
         letter-spacing: 1px;
         color: #35312E;
+
+        @media(max-width: $breakpoints768){
+            text-align: center;
+        }
     }
 
     &__btc-body{
-        padding: 58px 0 0 0;
+        padding: 58px 0 170px 0;
+        @media(max-width: $breakpoints768){
+            padding: 20px 0 150px 0;
+            text-align: center;
+        }
+        @media(max-width: $breakpoints488){
+            padding: 50px 0 120px 0;
+            text-align: center;
+        }
+        
     }
 
     &__btc {
@@ -142,17 +184,124 @@
         text-transform: uppercase;
         letter-spacing: 1px;
         color: #FFFFFF;
-
         display: inline-flex;
         padding: 20px 30px;
         background: #D37657;
-        border-radius: 2px;
+        border-radius: 5px;
+        transition: .5s;
+        &:hover{
+            background: #d44c1f;  
+            
+            border-radius: 15px;
+        }
+        
     }
 }
 
 span {
     text-decoration-line: underline;
 }
+
+//Traditional
+.traditional {
+    background-color: #F5F1E9;
+    padding: 45px 0;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    &__body {
+        
+    }
+
+    &__title {
+        font-family: 'Roboto';
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 24px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #35312E;
+        @media(max-width: $breakpoints768){
+            padding: 0 0 20px 0;
+        }
+    }
+
+    &__list {
+
+        &_body {
+            display: flex;
+            justify-content: space-evenly;
+            max-width: 1140px;
+            margin: 0 auto;
+            @media(max-width:900px){
+                flex-wrap: wrap;
+            }
+            
+        }
+
+        &_item {
+            padding: 40px 30px 0 30px;
+            @media(max-width:900px){
+                flex-wrap: wrap;
+            }
+        }
+
+        &_imaging {
+        }
+    }
+}
+
+//Welcome-block
+.welcome {
+    background-color: #FCFAF6;
+    padding: 120px 0;
+    max-width: 1440px;
+    margin: 0 auto;
+
+    &__body {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1185px;
+        margin: 0 auto;
+        @media(max-width:$breakpoints768){
+            flex-direction: column;
+        }
+
+    }
+
+    &__title {
+        max-width: 400px;
+        margin: 0 auto;
+        padding: 0 10% 0 0;
+        font-family: 'Roboto';
+        font-weight: bold;
+        font-size: 41px;
+        line-height: 46px;
+        text-align: center;
+        letter-spacing: 1.25px;
+        color: #35312E;
+        @media(max-width:$breakpoints768){
+            padding: 0;
+        }
+        
+    }
+
+    &__text {
+        max-width: 650px;
+        margin: 0 auto;
+        font-family: 'Roboto';
+        font-size: 16px;
+        line-height: 26px;
+        color: #4F463F;
+        @media(max-width:$breakpoints768){
+            padding: 40px 0 0 0;
+            text-align: center;
+        }
+    }
+}
+
+
+
 
 
 
