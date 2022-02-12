@@ -8,6 +8,9 @@
     max-width: 1440px;
     padding: 0 48px;
     margin: 0 auto;
+    @media(max-width:$breakpoints768){
+      padding: 0 20px;  
+    }
     @media(max-width: $breakpoints488){
         padding: 0 28px;
     }
@@ -257,6 +260,9 @@ span {
     padding: 120px 0;
     max-width: 1440px;
     margin: 0 auto;
+    @media(max-width:$breakpoints768){
+        padding: 74px 0;
+    }
 
     &__body {
         display: flex;
@@ -300,7 +306,251 @@ span {
     }
 }
 
+//Designed-block
+.designed {
+    background-color: #FBF6EA;
+    padding: 74px 0 140px 0;
+    max-width: 1440px;
+    margin: 0 auto;
+    @media(max-width:$breakpoints768){
+        padding: 74px 0 74px 0;
+        
+    }
 
+    &__body {
+      
+    }
+
+    &__title {
+        font-family: 'Roboto';
+        font-size: 35px;
+        line-height: 48px;
+        text-align: center;
+        color: #35312E;
+    }
+
+    &__colors {
+        padding: 52px 0 45px 0;
+        max-width: 345px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        &_orange {
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #E09D81;
+            transition: .2s;
+            &:focus{
+                border: 4px solid #B76D47 ;
+            }
+        }
+
+        &_blue {
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #748EA1;
+            transition: .2s;
+            &:focus{
+                border: 4px solid #E09D81 ;
+            }
+            
+        }
+
+        &_brown {
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #B76D47;
+            transition: .2s;
+            &:focus{
+                border: 4px solid #E09D81 ;
+            }
+        }
+
+        &_green {
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #7D836E;
+            transition: .2s;
+            &:focus{
+                border: 4px solid #E09D81 ;
+            }
+        }
+
+        &_red {
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #C33636;
+            transition: .2s;
+            &:focus{
+                border: 4px solid #E09D81 ;
+            }
+        }
+
+        &_wheat {
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #CDC7B3;
+            transition: .2s;
+            &:focus{
+                border: 4px solid #E09D81 ;
+            }
+        }
+
+        &_dark-green {
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #595752;
+            transition: .2s;
+            &:focus{
+                border: 4px solid #E09D81 ;
+            }
+        }
+
+        &_orchid {
+            display: block;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-color: #D3C2CA;
+            transition: .2s;
+            &:focus{
+                border: 4px solid #E09D81 ;
+            }
+        }
+    }
+
+
+//Skillet colors gallery
+    &__image {
+        display: flex;
+        justify-content: center;
+        
+
+        &_img {
+            width: 50%;
+            @media(max-width:$breakpoints768){
+              width: 65%;  
+            }
+            @media(max-width:$breakpoints488){
+              width: 100%;
+              margin: 0 0 0 15%;
+            }
+        }
+
+        &_img-orange {
+            
+        }
+        &_img-blue {
+          display: none;
+        }
+
+        
+        &_description-l {
+            width: 33%;
+            font-family: 'Roboto';
+            font-size: 12px;
+            line-height: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #6E6259;
+            @media(max-width:$breakpoints768){
+              width: 25%;  
+              @media(max-width:$breakpoints488){
+                display: none; 
+              }
+            }
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            :first-child{
+              padding: 15% 0 70% 0;
+              width: 134px;
+              margin: 0 -35px 0 0;
+              @media(max-width:$breakpoints768){
+                padding: 15% 0 100% 0;
+              }
+            }
+            :nth-child(2) {
+              width: 107px; 
+              margin: 0 -25px 0 0;
+              
+            }
+            :nth-child(3) {
+              padding: 20% 0 0 0;
+              width: 172px; 
+              margin: 0 -15px 0 0;
+              @media(max-width:$breakpoints768){
+                padding: 100% 0 0 0;
+                margin: 0 -40px 0 0;
+              }
+            }
+        }
+
+        &_description-r {
+            width: 17%;
+            font-family: 'Roboto';
+            font-size: 12px;
+            line-height: 15px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #6E6259;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            @media(max-width:$breakpoints992){
+              align-items: center;
+            }
+            @media(max-width:$breakpoints768){
+              width: 10%;  
+            }
+            @media(max-width:$breakpoints488){
+              display: none; 
+            }
+            
+
+            :first-child{
+              padding: 15% 0 100% 0;
+              width: 158px;
+              margin: 0 0 0 -150px;
+              @media(max-width:$breakpoints768){
+                padding: 15% 0 250% 0;
+              }
+            }
+            :nth-child(2) {
+              width: 171px; 
+              margin: 0 0 0 -175px;
+              @media(max-width:$breakpoints768){
+                margin: 0 0 0 -125px;
+              }
+            }
+            :nth-child(3) {
+              padding: 100% 0 0 0;
+              width: 160px; 
+              margin: 0 0 0 -105px;
+              @media(max-width:$breakpoints768){
+                padding: 270% 0 0 0;
+              }
+            }
+        }
+    }
+}
 
 
 
