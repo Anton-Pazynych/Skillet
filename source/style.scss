@@ -84,7 +84,7 @@
 
 // Skillet_block
 .skillet {
-    background-image: url(../img/bg-up.png);
+    background-image: url("../img/bg-up.png");
     background-repeat: no-repeat;
     background-position: bottom center;
     @media(max-width: $breakpoints1400){
