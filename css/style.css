@@ -71,6 +71,33 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+.button span {
+  display: block;
+  width: 25px;
+  height: 4px;
+  margin: 4px 0;
+  z-index: 10;
+}
+
+#sidebar.active {
+  right: -5px;
+}
+
+.menu-b {
+  position: fixed;
+  width: 450px;
+  height: 100vh;
+  background: rgba(233, 157, 58, 0.582);
+  right: -450px;
+}
+
+.button {
+  position: absolute;
+  right: 460px;
+  top: 0px;
+  background: #000;
+}
+
 .container {
   max-width: 1440px;
   padding: 0 48px;
@@ -129,6 +156,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 .menu__left {
   justify-items: left;
+}
+@media (max-width: 479.98px) {
+  .menu__left {
+    display: none;
+  }
 }
 .menu__item {
   font-family: "Roboto";
@@ -530,7 +562,6 @@ h1, h2, h3, h4, h5, h6 {
 @media (max-width: 479.98px) {
   .designed__image_img {
     width: 100%;
-    margin: 0 0 0 15%;
   }
 }
 .designed__image_img-blue {
@@ -1238,13 +1269,55 @@ h1, h2, h3, h4, h5, h6 {
           align-items: center;
   height: 74px;
 }
+@media (max-width: 768.98px) {
+  .copyright__body {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: 20px 0;
+    height: 100%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 .copyright__name {
   font-family: "Roboto";
   font-size: 14px;
   line-height: 27px;
   color: rgba(252, 250, 246, 0.5);
 }
+@media (max-width: 768.98px) {
+  .copyright__name {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 20px 0 0 0;
+  }
+}
+@media (max-width: 768.98px) {
+  .copyright__terms {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
 .copyright__terms_link {
+  display: inline-block;
   font-family: "Roboto";
   font-size: 14px;
   line-height: 27px;
@@ -1255,4 +1328,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .copyright__terms_link:hover {
   color: #F5F1E9;
+}
+.copyright__terms_link:last-child {
+  padding: 3px 15px 0px;
+  background: #fff;
+  border-radius: 5px;
 }

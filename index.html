@@ -9,6 +9,13 @@
     <link rel="icon" href="/img/logo.png">
 </head>
 <body>
+
+  <script>
+    function openMenu(){
+      document.getElementById("sidebar").classList.toggle('active')
+    }
+  </script>
+
 <!--Header-->
     <header>
         <div class="shipping">
@@ -33,6 +40,21 @@
                             <a class="menu__shop" href="#">O</a>
                         </div>
                     </div>
+
+<!--BURGER-->
+                    <div class="menu-b" id="sidebar">
+                      <div class="button" onclick="openMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="menu">
+                        <a class="item" href="#">Mission</a>
+                        <a class="item" href="#">FAQs</a>
+                      </div>
+                    </div>
+<!--BURGER-->
+
                 </div>
             </div>
         </div>
@@ -233,8 +255,10 @@
       </div>
     </section>
 <!--DirtyDishes-->
-    <footer>
 
+<!--Footer-->
+    <footer>
+  <!--Contakt-->
       <section class="contakt">
         <div class="container">
           <div class="contakt__body">
@@ -280,8 +304,7 @@
           </div>
         </div>
       </section>
-
-
+  <!--Copyright-->
       <section class="copyright">
         <div class="container">
           <div class="copyright__body">
@@ -298,11 +321,8 @@
           </div>
         </div>
       </section>
-
-
-
     </footer>
+<!--Footer-->
 
 </body>
-
 </html>

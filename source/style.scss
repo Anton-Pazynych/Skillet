@@ -3,6 +3,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 
+//BURGER===============================
+
+.button span{
+	display: block;
+	width: 25px;
+	height: 4px;
+	margin: 4px 0;
+  z-index: 10;
+}
+
+#sidebar.active{
+	right: -5px;
+}
+
+.menu-b{
+	position: fixed;
+	width: 450px;
+	height: 100vh;
+	background: rgba(233, 157, 58, 0.582);
+	right: -450px;
+}
+
+.button{
+	position: absolute;
+	right: 460px;
+	top: 0px;
+	background: #000;
+}
+
+//BURGER===============================
 
 .container {
     max-width: 1440px;
@@ -52,6 +82,9 @@
 
     &__left {
         justify-items: left;
+        @media(max-width:$breakpoints488){
+          display: none;
+        }
     }
 
     &__center {
@@ -440,7 +473,6 @@
             }
             @media(max-width:$breakpoints488){
               width: 100%;
-              margin: 0 0 0 15%;
             }
         }
 
@@ -1064,6 +1096,13 @@
     justify-content: space-between;
     align-items: center;
     height: 74px;
+    @media(max-width:$breakpoints768){
+      flex-wrap: wrap;
+      padding: 20px 0;
+      height: 100%;
+      justify-content: space-evenly;
+      align-items: center;
+    }
   }
 
   &__name {
@@ -1071,11 +1110,24 @@
     font-size: 14px;
     line-height: 27px;
     color: rgba(252, 250, 246, 0.5);
+    @media(max-width:$breakpoints768){
+      order: 2;
+      padding: 20px 0 0 0;
+    }
   }
 
   &__terms {
+    @media(max-width:$breakpoints768){
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      align-items: center;
+      order: 1;
+    }
     
     &_link {
+      display: inline-block;
       font-family: 'Roboto';
       font-size: 14px;
       line-height: 27px;
@@ -1085,9 +1137,14 @@
       &:hover{
         color: #F5F1E9;
       }
+      &:last-child{
+        padding: 3px 15px 0px;
+        background: #fff;
+        border-radius: 5px;
+      }
+      
     }
   }
 }
-
 
 
