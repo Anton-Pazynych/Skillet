@@ -3,85 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 
-//BURGER===============================
-
-.menu-b{
-  @media(min-width: 651px){
-    display: none;
-    }
-}
-
-#sidebar.active{
-	display: flex;
-  position: fixed;
-}
-
-.button span{
-	display: block;
-	width: 35px;
-	height: 3px;
-  background: #d44c1f;
-  margin: 10px 0 0 0;
-  border-radius: 1.5px;
-  align-items: center;
-  &:first-child{
-    margin: 0;
-  }
-}
-
-.button-on span{
-  background: #f8f8f8;
-  width: 80px;
-  margin: 0;
-  &:nth-child(2){
-    display: none;
-  }
-  &:nth-child(1){
-    transform: rotate(45deg);
-  }
-  &:nth-child(3){
-    transform: rotate(-45deg);
-  }
-}
-
-.button-on{
-  background: #d44c1fd0;
-  padding: 60px 20px;
-  border-radius: 50%;
-  transition: .5s;
-  &:hover{
-    background: #b83e16;
-  }
-  
-}
-
-.menu-sl {
-  display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: rgba(38, 75, 16, 0.9);
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  font-size: 50px;
-  line-height: 46px;
-  
-}
-
-.ii {
-  padding: 30px 0;
-  color: #f8f8f8;
-  &:hover{
-    color: #f38d6bd0;
-  }
-}
-
-//BURGER===============================
-
-
 
 .container {
     max-width: 1440px;
@@ -380,7 +301,6 @@
 }
 
 //Designed-block
-
 .designed {
     background-color: #FBF6EA;
     padding: 74px 0 140px 0;
@@ -510,6 +430,7 @@
     }
 
 //Skillet colors gallery
+
     &__image {
         display: flex;
         justify-content: center;
@@ -524,13 +445,6 @@
               width: 100%;
             }
         }
-
-        &_img-orange {
-        }
-        &_img-blue {
-          display: none;
-        }
-
         
         &_description-l {
             width: 33%;
@@ -1192,6 +1106,82 @@
       }
       
     }
+  }
+}
+
+//BURGER===============================
+
+.menu-b{
+  @media(min-width: 651px){
+    display: none;
+    }
+}
+
+#sidebar.active{
+	display: flex;
+  position: fixed;
+}
+
+.button span{
+	display: block;
+	width: 35px;
+	height: 3px;
+  background: #d44c1f;
+  margin: 10px 0 0 0;
+  border-radius: 1.5px;
+  align-items: center;
+  &:first-child{
+    margin: 0;
+  }
+}
+
+.button-on span{
+  background: #f8f8f8;
+  width: 80px;
+  margin: 0;
+  &:nth-child(2){
+    display: none;
+  }
+  &:nth-child(1){
+    transform: rotate(45deg);
+  }
+  &:nth-child(3){
+    transform: rotate(-45deg);
+  }
+}
+
+.button-on{
+  background: #d44c1fd0;
+  padding: 60px 20px;
+  border-radius: 50%;
+  transition: .5s;
+  &:hover{
+    background: #b83e16;
+  }
+  
+}
+
+.menu-sl {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(38, 75, 16, 0.9);
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 50px;
+  line-height: 46px;
+  
+}
+
+.ii {
+  padding: 30px 0;
+  color: #f8f8f8;
+  &:hover{
+    color: #f38d6bd0;
   }
 }
 
