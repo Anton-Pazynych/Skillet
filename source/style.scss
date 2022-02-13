@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 
-
 .container {
     max-width: 1440px;
     padding: 0 48px;
@@ -12,7 +11,6 @@
       padding: 0 20px;  
     }
 }
-
 
 // Header
 .shipping {
@@ -58,12 +56,16 @@
     }
 
     &__center {
+      transition: .5s;
+      &:hover{
+        transform: scale(1.2);
+      }
     }
 
     &__item {
         font-family:'Roboto';
         font-weight: bold;
-        font-size: 13px;
+        font-size: 14px;
         line-height: 22px;
         letter-spacing: 0.5px;
         text-transform: uppercase;
@@ -76,31 +78,8 @@
         &:hover{
             color: #d44c1f;
         }
-        
-
     }    
     
-    &__shop {
-        font-family: 'Roboto';
-        font-weight: bold;
-        font-size: 13px;
-        text-transform: uppercase;
-        color: #F5F1E9;
-
-        padding: 12px 15px;
-        border-radius: 50%;
-        background-color: #C87B5E;
-        transition: .5s;
-        &:hover{
-            background: #d44c1f;  
-            
-        }
-    }
-}
-
-.menu__shop_body{
-    display: inline;
-    padding: 0 0 0 15px;
 }
 
 // Skillet_block
@@ -193,7 +172,9 @@
         &:hover{
             background: #d44c1f;
             border-radius: 8px;
+            transform: scale(1.1);
         }
+        
         
     }
 }
@@ -330,6 +311,7 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        
 
         &_orange {
             display: block;
@@ -337,9 +319,12 @@
             height: 30px;
             border-radius: 50%;
             background-color: #E09D81;
-            transition: .2s;
+            transition: .5s;
             &:focus{
                 border: 4px solid #B76D47 ;
+            }
+            &:hover{
+              transform: scale(1.2);
             }
         }
 
@@ -349,9 +334,12 @@
             height: 30px;
             border-radius: 50%;
             background-color: #748EA1;
-            transition: .2s;
+            transition: .5s;
             &:focus{
                 border: 4px solid #E09D81 ;
+            }
+            &:hover{
+              transform: scale(1.2);
             }
             
         }
@@ -362,9 +350,12 @@
             height: 30px;
             border-radius: 50%;
             background-color: #B76D47;
-            transition: .2s;
+            transition: .5s;
             &:focus{
                 border: 4px solid #E09D81 ;
+            }
+            &:hover{
+              transform: scale(1.2);
             }
         }
 
@@ -374,9 +365,12 @@
             height: 30px;
             border-radius: 50%;
             background-color: #7D836E;
-            transition: .2s;
+            transition: .5s;
             &:focus{
                 border: 4px solid #E09D81 ;
+            }
+            &:hover{
+              transform: scale(1.2);
             }
         }
 
@@ -386,9 +380,12 @@
             height: 30px;
             border-radius: 50%;
             background-color: #C33636;
-            transition: .2s;
+            transition: .5s;
             &:focus{
                 border: 4px solid #E09D81 ;
+            }
+            &:hover{
+              transform: scale(1.2);
             }
         }
 
@@ -398,9 +395,12 @@
             height: 30px;
             border-radius: 50%;
             background-color: #CDC7B3;
-            transition: .2s;
+            transition: .5s;
             &:focus{
                 border: 4px solid #E09D81 ;
+            }
+            &:hover{
+              transform: scale(1.2);
             }
         }
 
@@ -410,9 +410,12 @@
             height: 30px;
             border-radius: 50%;
             background-color: #595752;
-            transition: .2s;
+            transition: .5s;
             &:focus{
                 border: 4px solid #E09D81 ;
+            }
+            &:hover{
+              transform: scale(1.2);
             }
         }
 
@@ -422,9 +425,12 @@
             height: 30px;
             border-radius: 50%;
             background-color: #D3C2CA;
-            transition: .2s;
+            transition: .5s;
             &:focus{
                 border: 4px solid #E09D81 ;
+            }
+            &:hover{
+              transform: scale(1.2);
             }
         }
     }
@@ -590,6 +596,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: .5s;
+    &:hover{
+      transform: scale(1.1);
+    }
     
 
     &_text-block{
@@ -650,6 +660,10 @@
       width: 20px;
       height: 20px;
       border-radius: 50%;
+      transition: .5s;
+      &:hover{
+        transform: scale(1.2);
+      }
     }
   }
 }
