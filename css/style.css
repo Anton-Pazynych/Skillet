@@ -71,31 +71,51 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+@media (min-width: 651px) {
+  .menu-b {
+    display: none;
+  }
+}
+
 .button span {
   display: block;
   width: 25px;
-  height: 4px;
-  margin: 4px 0;
-  z-index: 10;
+  height: 25px;
+  background: #670A18;
+  border-radius: 50%;
 }
 
 #sidebar.active {
-  right: -5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.menu-b {
-  position: fixed;
-  width: 450px;
-  height: 100vh;
-  background: rgba(233, 157, 58, 0.582);
-  right: -450px;
-}
-
-.button {
+.menu-sl {
+  display: none;
   position: absolute;
-  right: 460px;
-  top: 0px;
-  background: #000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(38, 75, 16, 0.9);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 50px;
+  line-height: 46px;
+}
+
+.ii {
+  padding: 30px 0;
+  color: #f8f8f8;
 }
 
 .container {
@@ -157,7 +177,7 @@ h1, h2, h3, h4, h5, h6 {
 .menu__left {
   justify-items: left;
 }
-@media (max-width: 479.98px) {
+@media (max-width: 650px) {
   .menu__left {
     display: none;
   }
