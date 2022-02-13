@@ -84,7 +84,7 @@
 
 // Skillet_block
 .skillet {
-    background-image: url(img/bg-up.png);
+    background-image: url(../img/bg-up.png);
     background-repeat: no-repeat;
     background-position: bottom center;
     @media(max-width: $breakpoints1400){
@@ -173,6 +173,7 @@
             background: #d44c1f;
             border-radius: 8px;
             transform: scale(1.1);
+            box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.322);
         }
         
         
@@ -894,6 +895,8 @@
           background: #B55900;
           color: #fff;
           border-radius: 8px;
+          transform: scale(1.1);
+          box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.322);
         }
       }
     }

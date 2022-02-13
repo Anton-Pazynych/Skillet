@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skillet {
-  background-image: url(img/bg-up.png);
+  background-image: url(../img/bg-up.png);
   background-repeat: no-repeat;
   background-position: bottom center;
 }
@@ -271,6 +271,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 8px;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.322);
+          box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.322);
 }
 
 .traditional {
@@ -1055,6 +1057,10 @@ h1, h2, h3, h4, h5, h6 {
   background: #B55900;
   color: #fff;
   border-radius: 8px;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.322);
+          box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.322);
 }
 
 .contakt {
