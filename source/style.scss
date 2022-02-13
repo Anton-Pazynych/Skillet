@@ -11,16 +11,48 @@
     }
 }
 
-.button span{
-	display: block;
-	width: 25px;
-	height: 25px;
-  background: #670A18;
-  border-radius: 50%;
-}
-
 #sidebar.active{
 	display: flex;
+  position: fixed;
+}
+
+.button span{
+	display: block;
+	width: 35px;
+	height: 3px;
+  background: #d44c1f;
+  margin: 10px 0 0 0;
+  border-radius: 1.5px;
+  align-items: center;
+  &:first-child{
+    margin: 0;
+  }
+}
+
+.button-on span{
+  background: #f8f8f8;
+  width: 80px;
+  margin: 0;
+  &:nth-child(2){
+    display: none;
+  }
+  &:nth-child(1){
+    transform: rotate(45deg);
+  }
+  &:nth-child(3){
+    transform: rotate(-45deg);
+  }
+}
+
+.button-on{
+  background: #d44c1fd0;
+  padding: 60px 20px;
+  border-radius: 50%;
+  transition: .5s;
+  &:hover{
+    background: #b83e16;
+  }
+  
 }
 
 .menu-sl {
@@ -34,16 +66,17 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   font-size: 50px;
   line-height: 46px;
   
-
 }
 
 .ii {
   padding: 30px 0;
   color: #f8f8f8;
+  &:hover{
+    color: #f38d6bd0;
+  }
 }
 
 //BURGER===============================

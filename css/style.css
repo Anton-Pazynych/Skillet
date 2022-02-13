@@ -77,18 +77,54 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-.button span {
-  display: block;
-  width: 25px;
-  height: 25px;
-  background: #670A18;
-  border-radius: 50%;
-}
-
 #sidebar.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: fixed;
+}
+
+.button span {
+  display: block;
+  width: 35px;
+  height: 3px;
+  background: #d44c1f;
+  margin: 10px 0 0 0;
+  border-radius: 1.5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.button span:first-child {
+  margin: 0;
+}
+
+.button-on span {
+  background: #f8f8f8;
+  width: 80px;
+  margin: 0;
+}
+.button-on span:nth-child(2) {
+  display: none;
+}
+.button-on span:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.button-on span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.button-on {
+  background: #d44c1fd0;
+  padding: 60px 20px;
+  border-radius: 50%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.button-on:hover {
+  background: #b83e16;
 }
 
 .menu-sl {
@@ -116,6 +152,9 @@ h1, h2, h3, h4, h5, h6 {
 .ii {
   padding: 30px 0;
   color: #f8f8f8;
+}
+.ii:hover {
+  color: #f38d6bd0;
 }
 
 .container {
