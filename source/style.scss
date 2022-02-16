@@ -283,266 +283,215 @@
 }
 
 //Designed-block
+
 .designed {
-    background-color: #FBF6EA;
-    padding: 74px 0 140px 0;
-    max-width: 1440px;
-    margin: 0 auto;
-    @media(max-width:$breakpoints768){
-        padding: 74px 0 74px 0;
-        
-    }
-
-    &__body {
+  background-color: #FBF6EA;
+  padding: 74px 0 140px 0;
+  max-width: 1440px;
+  margin: 0 auto;
+  @media(max-width:$breakpoints768){
+      padding: 74px 0 74px 0;
       
-    }
+  }
 
-    &__title {
-        font-family: 'Roboto';
-        font-size: 35px;
-        line-height: 48px;
-        text-align: center;
-        color: #35312E;
-    }
+  &__body {
+    
+  }
 
-    &__colors {
-        padding: 52px 0 45px 0;
-        max-width: 345px;
-        margin: 0 auto;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        
+  &__title {
+      font-family: 'Roboto';
+      font-size: 35px;
+      line-height: 48px;
+      text-align: center;
+      color: #35312E;
+  }
 
-        &_orange {
-            display: block;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background-color: #E09D81;
-            transition: .5s;
-            &:focus{
-                border: 4px solid #B76D47 ;
-            }
-            &:hover{
-              transform: scale(1.2);
-            }
-        }
-
-        &_blue {
-            display: block;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background-color: #748EA1;
-            transition: .5s;
-            &:focus{
-                border: 4px solid #E09D81 ;
-            }
-            &:hover{
-              transform: scale(1.2);
-            }
-            
-        }
-
-        &_brown {
-            display: block;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background-color: #B76D47;
-            transition: .5s;
-            &:focus{
-                border: 4px solid #E09D81 ;
-            }
-            &:hover{
-              transform: scale(1.2);
-            }
-        }
-
-        &_green {
-            display: block;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background-color: #7D836E;
-            transition: .5s;
-            &:focus{
-                border: 4px solid #E09D81 ;
-            }
-            &:hover{
-              transform: scale(1.2);
-            }
-        }
-
-        &_red {
-            display: block;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background-color: #C33636;
-            transition: .5s;
-            &:focus{
-                border: 4px solid #E09D81 ;
-            }
-            &:hover{
-              transform: scale(1.2);
-            }
-        }
-
-        &_wheat {
-            display: block;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background-color: #CDC7B3;
-            transition: .5s;
-            &:focus{
-                border: 4px solid #E09D81 ;
-            }
-            &:hover{
-              transform: scale(1.2);
-            }
-        }
-
-        &_dark-green {
-            display: block;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background-color: #595752;
-            transition: .5s;
-            &:focus{
-                border: 4px solid #E09D81 ;
-            }
-            &:hover{
-              transform: scale(1.2);
-            }
-        }
-
-        &_orchid {
-            display: block;
-            width: 30px;
-            height: 30px;
-            border-radius: 50%;
-            background-color: #D3C2CA;
-            transition: .5s;
-            &:focus{
-                border: 4px solid #E09D81 ;
-            }
-            &:hover{
-              transform: scale(1.2);
-            }
-        }
-    }
+  &__colors {
+      padding: 52px 0 45px 0;
+      max-width: 345px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
 
 //Skillet colors gallery
 
-    &__image {
-        display: flex;
-        justify-content: center;
-        
+  &__image {
+      display: flex;
+      justify-content: center;
+      
 
-        &_img {
-            width: 50%;
-            @media(max-width:$breakpoints768){
-              width: 65%;  
-            }
-            @media(max-width:$breakpoints488){
-              width: 100%;
-            }
-        }
-        
-        &_description-l {
-            width: 33%;
-            font-family: 'Roboto';
-            font-size: 12px;
-            line-height: 15px;
-            text-align: center;
-            text-transform: uppercase;
-            color: #6E6259;
-            @media(max-width:$breakpoints768){
-              width: 25%;  
-              @media(max-width:$breakpoints488){
-                display: none; 
-              }
-            }
-
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            :first-child{
-              padding: 15% 0 70% 0;
-              width: 134px;
-              margin: 0 -35px 0 0;
-              @media(max-width:$breakpoints768){
-                padding: 15% 0 100% 0;
-              }
-            }
-            :nth-child(2) {
-              width: 107px; 
-              margin: 0 -25px 0 0;
-              
-            }
-            :nth-child(3) {
-              padding: 20% 0 0 0;
-              width: 172px; 
-              margin: 0 -15px 0 0;
-              @media(max-width:$breakpoints768){
-                padding: 100% 0 0 0;
-                margin: 0 -40px 0 0;
-              }
-            }
-        }
-
-        &_description-r {
-            width: 17%;
-            font-family: 'Roboto';
-            font-size: 12px;
-            line-height: 15px;
-            text-align: center;
-            text-transform: uppercase;
-            color: #6E6259;
-            display: flex;
-            flex-direction: column;
-            align-items: flex-start;
-            @media(max-width:$breakpoints992){
-              align-items: center;
-            }
-            @media(max-width:$breakpoints768){
-              width: 10%;  
-            }
+      &_img {
+        display: none;
+      }
+      
+      &_description-l {
+          width: 33%;
+          font-family: 'Roboto';
+          font-size: 12px;
+          line-height: 15px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #6E6259;
+          @media(max-width:$breakpoints768){
+            width: 25%;  
             @media(max-width:$breakpoints488){
               display: none; 
             }
-            
+          }
 
-            :first-child{
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          :first-child{
+            padding: 15% 0 70% 0;
+            width: 134px;
+            margin: 0 -35px 0 0;
+            @media(max-width:$breakpoints768){
               padding: 15% 0 100% 0;
-              width: 158px;
-              margin: 0 0 0 -150px;
-              @media(max-width:$breakpoints768){
-                padding: 15% 0 250% 0;
-              }
             }
-            :nth-child(2) {
-              width: 171px; 
-              margin: 0 0 0 -175px;
-              @media(max-width:$breakpoints768){
-                margin: 0 0 0 -125px;
-              }
-            }
-            :nth-child(3) {
+          }
+          :nth-child(2) {
+            width: 107px; 
+            margin: 0 -25px 0 0;
+            
+          }
+          :nth-child(3) {
+            padding: 20% 0 0 0;
+            width: 172px; 
+            margin: 0 -15px 0 0;
+            @media(max-width:$breakpoints768){
               padding: 100% 0 0 0;
-              width: 160px; 
-              margin: 0 0 0 -105px;
-              @media(max-width:$breakpoints768){
-                padding: 270% 0 0 0;
-              }
+              margin: 0 -40px 0 0;
             }
-        }
-    }
+          }
+      }
+
+      &_description-r {
+          width: 17%;
+          font-family: 'Roboto';
+          font-size: 12px;
+          line-height: 15px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #6E6259;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          @media(max-width:$breakpoints992){
+            align-items: center;
+          }
+          @media(max-width:$breakpoints768){
+            width: 10%;  
+          }
+          @media(max-width:$breakpoints488){
+            display: none; 
+          }
+          
+
+          :first-child{
+            padding: 15% 0 100% 0;
+            width: 158px;
+            margin: 0 0 0 -150px;
+            @media(max-width:$breakpoints768){
+              padding: 15% 0 250% 0;
+            }
+          }
+          :nth-child(2) {
+            width: 171px; 
+            margin: 0 0 0 -175px;
+            @media(max-width:$breakpoints768){
+              margin: 0 0 0 -125px;
+            }
+          }
+          :nth-child(3) {
+            padding: 100% 0 0 0;
+            width: 160px; 
+            margin: 0 0 0 -105px;
+            @media(max-width:$breakpoints768){
+              padding: 270% 0 0 0;
+            }
+          }
+      }
+  }
 }
+
+
+.designed__i{
+  width: 45%;
+
+  @media(max-width:$breakpoints992){
+    width: 55%;  
+  }
+  @media(max-width:$breakpoints768){
+    width: 65%;  
+  }
+  @media(max-width:$breakpoints488){
+    width: 100%;
+  }
+
+}
+
+.designed__color{
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #E09D81;
+  transition: .2s all ease;
+}
+
+.designed__image_img{
+  display: none;
+  width: 100%;
+}
+
+
+.designed__color.is-active {
+  transform: scale(1.5);
+  border: 2px solid #B76D47 ;
+}
+
+.designed__image_img.is-active {
+  display: block;
+}
+
+
+.orange {
+  background-color: #E09D81;
+}
+
+.blue {
+  background-color: #748EA1;
+}
+
+.brown {
+  background-color: #B76D47;
+}
+
+.green {
+  background-color: #7D836E;
+}
+
+.red {
+  background-color: #C33636;
+}
+
+.wheat {
+  background-color: #CDC7B3;
+}
+
+.dark-green {
+  background-color: #595752;
+}
+
+.orchid {
+  background-color: #D3C2CA;
+}
+
+
+
 
 //Dishes-block
 .dishes {

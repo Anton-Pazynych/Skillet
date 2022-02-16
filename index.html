@@ -10,12 +10,6 @@
 </head>
 <body>
 
-  <script>
-    function openMenu(){
-      document.getElementById("sidebar").classList.toggle('active')
-    }
-  </script>
-
 <!--Header-->
     <header>
         <div class="shipping">
@@ -126,29 +120,45 @@
                 <div class="designed__title">
                     <h2>Designed for Everything and Always</h2>
                 </div>
+
+
                 <div class="designed__colors">
-                    <a class="designed__colors_orange" href="#1"></a>
-                    <a class="designed__colors_blue" href="#1"></a>
-                    <a class="designed__colors_brown" href="#1"></a>
-                    <a class="designed__colors_green" href="#1"></a>
-                    <a class="designed__colors_red" href="#1"></a>
-                    <a class="designed__colors_wheat" href="#1"></a>
-                    <a class="designed__colors_dark-green" href="#1"></a>
-                    <a class="designed__colors_orchid" href="#1"></a>
+                  <a class="designed__color orange is-active" href="#1"></a>
+                  <a class="designed__color blue" href="#1"></a>
+                  <a class="designed__color brown" href="#1"></a>
+                  <a class="designed__color green" href="#1"></a>
+                  <a class="designed__color red"href="#1"></a>
+                  <a class="designed__color wheat" href="#1"></a>
+                  <a class="designed__color dark-green" href="#1"></a>
+                  <a class="designed__color orchid" href="#1"></a>
+              </div>
+
+              <div class="designed__image">
+                <div class="designed__image_description-l">
+                  <div>Modular lid to release & trap steam</div>
+                  <div>2 easy-pour spouts</div>
+                  <div>Exclusive, ceramic nonstick made without PFOAs & PTFEs</div>
                 </div>
-                <div class="designed__image">
-                    <div class="designed__image_description-l">
-                      <div>Modular lid to release & trap steam</div>
-                      <div>2 easy-pour spouts</div>
-                      <div>Exclusive, ceramic nonstick made without PFOAs & PTFEs</div>
-                    </div>
-                      <img class="designed__image_img" src="img/skillet_orange.png" alt="skilet">
-                    <div class="designed__image_description-r">
-                      <div>Beechwood spatula & built-in spoon rest</div>
-                      <div>Nesting steamer basket & colander</div>
-                      <div>Stay cool handle</div>
-                    </div>
+                <div class="designed__i">
+                  <img class="designed__image_img is-active" src="img/designed/orange.png" alt="skilet">
+                  <img class="designed__image_img" src="img/designed/blue.png" alt="skilet">
+                  <img class="designed__image_img" src="img/designed/brown.png" alt="skilet">
+                  <img class="designed__image_img" src="img/designed/green.png" alt="skilet">
+                  <img class="designed__image_img" src="img/designed/red.png" alt="skilet">
+                  <img class="designed__image_img" src="img/designed/wheat.png" alt="skilet">
+                  <img class="designed__image_img" src="img/designed/dark-green.png" alt="skilet">
+                  <img class="designed__image_img" src="img/designed/orchid.png" alt="skilet">
                 </div>
+
+                <div class="designed__image_description-r">
+                  <div>Beechwood spatula & built-in spoon rest</div>
+                  <div>Nesting steamer basket & colander</div>
+                  <div>Stay cool handle</div>
+                </div>
+            </div>
+
+
+
             </div>
         </div>
     </section>
@@ -326,6 +336,45 @@
       </section>
     </footer>
 <!--Footer-->
+
+<script>
+  function openMenu(){
+    document.getElementById("sidebar").classList.toggle('active')
+  }
+
+
+
+  
+const menuColors = Array.from(document.querySelectorAll('.designed__color'))
+const skilletColors = Array.from(document.querySelectorAll('.designed__image_img'))
+
+const clearActiveClass = (element, className = 'is-active') => {
+  element.find(item => item.classList.remove(`${ className }`))
+}
+
+const setActiveClass = (element, index, className = 'is-active') => {
+  element[index].classList.add(`${ className }`)
+}
+
+const checkoutTabs = (item, index) => {
+  item.addEventListener('click', () => {
+    
+    if (item.classList.contains('is-active')) return
+    console.log(item)
+  
+    clearActiveClass(menuColors)
+    clearActiveClass(skilletColors)
+    
+    setActiveClass(menuColors, index)
+    setActiveClass(skilletColors, index)
+  })
+}
+
+menuColors.forEach(checkoutTabs)
+
+
+</script>
+
 
 </body>
 </html>

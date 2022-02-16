@@ -412,134 +412,6 @@ h1, h2, h3, h4, h5, h6 {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.designed__colors_orange {
-  display: block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #E09D81;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.designed__colors_orange:focus {
-  border: 4px solid #B76D47;
-}
-.designed__colors_orange:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-.designed__colors_blue {
-  display: block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #748EA1;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.designed__colors_blue:focus {
-  border: 4px solid #E09D81;
-}
-.designed__colors_blue:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-.designed__colors_brown {
-  display: block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #B76D47;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.designed__colors_brown:focus {
-  border: 4px solid #E09D81;
-}
-.designed__colors_brown:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-.designed__colors_green {
-  display: block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #7D836E;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.designed__colors_green:focus {
-  border: 4px solid #E09D81;
-}
-.designed__colors_green:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-.designed__colors_red {
-  display: block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #C33636;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.designed__colors_red:focus {
-  border: 4px solid #E09D81;
-}
-.designed__colors_red:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-.designed__colors_wheat {
-  display: block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #CDC7B3;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.designed__colors_wheat:focus {
-  border: 4px solid #E09D81;
-}
-.designed__colors_wheat:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-.designed__colors_dark-green {
-  display: block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #595752;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.designed__colors_dark-green:focus {
-  border: 4px solid #E09D81;
-}
-.designed__colors_dark-green:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-.designed__colors_orchid {
-  display: block;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  background-color: #D3C2CA;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-.designed__colors_orchid:focus {
-  border: 4px solid #E09D81;
-}
-.designed__colors_orchid:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
 .designed__image {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -549,17 +421,7 @@ h1, h2, h3, h4, h5, h6 {
           justify-content: center;
 }
 .designed__image_img {
-  width: 50%;
-}
-@media (max-width: 768.98px) {
-  .designed__image_img {
-    width: 65%;
-  }
-}
-@media (max-width: 479.98px) {
-  .designed__image_img {
-    width: 100%;
-  }
+  display: none;
 }
 .designed__image_description-l {
   width: 33%;
@@ -679,6 +541,82 @@ h1, h2, h3, h4, h5, h6 {
   .designed__image_description-r :nth-child(3) {
     padding: 270% 0 0 0;
   }
+}
+
+.designed__i {
+  width: 45%;
+}
+@media (max-width: 991.98px) {
+  .designed__i {
+    width: 55%;
+  }
+}
+@media (max-width: 768.98px) {
+  .designed__i {
+    width: 65%;
+  }
+}
+@media (max-width: 479.98px) {
+  .designed__i {
+    width: 100%;
+  }
+}
+
+.designed__color {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #E09D81;
+  -webkit-transition: 0.2s all ease;
+  transition: 0.2s all ease;
+}
+
+.designed__image_img {
+  display: none;
+  width: 100%;
+}
+
+.designed__color.is-active {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  border: 2px solid #B76D47;
+}
+
+.designed__image_img.is-active {
+  display: block;
+}
+
+.orange {
+  background-color: #E09D81;
+}
+
+.blue {
+  background-color: #748EA1;
+}
+
+.brown {
+  background-color: #B76D47;
+}
+
+.green {
+  background-color: #7D836E;
+}
+
+.red {
+  background-color: #C33636;
+}
+
+.wheat {
+  background-color: #CDC7B3;
+}
+
+.dark-green {
+  background-color: #595752;
+}
+
+.orchid {
+  background-color: #D3C2CA;
 }
 
 .dishes {
